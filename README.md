@@ -37,6 +37,7 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 <img width="677" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e8ae3654-7c2d-404f-8e69-0d840bdadb46">
 
 ```spike -d pk (filename).c``` is a command used for debugging , it shows what is stored in the registers .
+
 <img width="751" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/899f1c5a-19cd-4628-a997-82e4d8276c81">
 
 * Pressing Enter goes to next succesive line.
