@@ -45,9 +45,11 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 * To Quit the debugger press on q.
 
 ### CODE for highest and lowest signed and unsigned integers:
-*<img width="600" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/87016cbf-7070-4d10-8238-7933ffb80f25">
+<img width="624" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f54238ee-88a0-4215-be32-2d4b62327d8d">
 
 ### OUTPUT:
+<img width="423" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b6fb963c-022c-41bd-b4ed-159543bc91da">
+
 
 
 
