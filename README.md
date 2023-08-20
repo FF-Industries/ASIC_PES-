@@ -31,7 +31,7 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 <img width="617" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9d230df6-c2a2-4eb0-a1bc-7911c5f8c4c8">
 <img width="617" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/cfd9db7c-b902-432e-8684-cbbd243b575a">
 
-### SPIKE SIMULATION AND DEBUGGER
+### SPIKE SIMULATION AND DEBUGGER:
 ```spike pk (filename).o```is a command similar to ```./a.out``` and is used to show the output of the risk compiler.
 
 <img width="677" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e8ae3654-7c2d-404f-8e69-0d840bdadb46">
@@ -43,6 +43,12 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 * Pressing Enter goes to next succesive line.
 * Writing reg 0 a1 or any other reg value gives what is stored in it.
 * To Quit the debugger press on q.
+
+### CODE for highest and lowest signed and unsigned integers:
+*<img width="600" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/87016cbf-7070-4d10-8238-7933ffb80f25">
+
+### OUTPUT:
+
 
 
 
