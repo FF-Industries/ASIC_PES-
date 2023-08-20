@@ -8,5 +8,8 @@ Mentor- Kunal Ghosh
 * Create a simple C program That calculates sum from 1 to N -> sum_1_to_N.c
 ### CODE:
 <img width="299" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/76d9aac4-9f31-4113-a5c1-81a02c17e81b">
+
 ### OUTPUT:
+<img width="312" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/4dd335eb-a195-4c16-99e2-19b6c67e1137">
+
 
