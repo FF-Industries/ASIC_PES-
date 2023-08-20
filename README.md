@@ -6,7 +6,7 @@ Mentor- Kunal Ghosh
 ## DAY 1
 * Introduction to RISC-V ISA and GNU compiler toolchain , The C-program is converted into Assembly Code( here for RISC-V processor). Then the assembly code is converted into binary. An RTL implements this code for the particular layout of the RISC-V processor and the output is visible.
 * Create a simple C program That calculates sum from 1 to N -> sum_1_to_N.c .
-### CODE:
+### 1. CODE:
 <img width="299" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/76d9aac4-9f31-4113-a5c1-81a02c17e81b">
 
 __Commands to compile and run c code in normal compiler__
@@ -44,7 +44,7 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 * Writing reg 0 a1 or any other reg value gives what is stored in it.
 * To Quit the debugger press on q.
 
-### CODE for highest and lowest signed and unsigned integers:
+### 2. CODE for highest and lowest signed and unsigned integers:
 <img width="624" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f54238ee-88a0-4215-be32-2d4b62327d8d">
 
 ### OUTPUT:
