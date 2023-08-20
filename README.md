@@ -33,6 +33,8 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 
 ### SPIKE SIMULATION AND DEBUGGER
 ```spike pk (filename).o```is a command similar to ```./a.out``` and is used to show the output of the risk compiler.
+<img width="677" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e8ae3654-7c2d-404f-8e69-0d840bdadb46">
+
 
 
 
