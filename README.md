@@ -28,6 +28,8 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 
 
 ### OUTPUT USING RISK COMPILER:
+<img width="617" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9d230df6-c2a2-4eb0-a1bc-7911c5f8c4c8">
+
 
 
 
