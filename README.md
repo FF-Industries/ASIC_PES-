@@ -9,7 +9,7 @@ Mentor- Kunal Ghosh
 ### CODE:
 <img width="299" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/76d9aac4-9f31-4113-a5c1-81a02c17e81b">
 
-* __ __Commands to compile and run c code in normal compiler__ __
+__Commands to compile and run c code in normal compiler__
 
 ```
 gcc (filename).c
