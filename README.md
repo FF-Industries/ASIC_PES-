@@ -19,6 +19,15 @@ gcc (filename).c
 ### OUTPUT USING NORMAL COMPILER:
 <img width="312" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/4dd335eb-a195-4c16-99e2-19b6c67e1137">
 
+__Commands to compile and run c code in RISK compiler__
+
+```
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o (filename).o (filename).c
+riscv64-unknown-elf-objdump -d (filename).o | less
+```
+
+
 ### OUTPUT USING RISK COMPILER:
+
 
 
