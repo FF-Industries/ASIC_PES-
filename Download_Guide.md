@@ -1,3 +1,4 @@
+```
 sudo apt-get install vim -y #installs vim editor with "Yes" for all permissions that will be requested while doing the task
 sudo apt-get install autoconf -y #tool to generate configure script
 sudo apt-get install automake -y #tool to generate makefiles(to build software)
@@ -50,6 +51,21 @@ sudo make install
 echo 'export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH' >> ~/.bashrc
 echo 'export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
-
+```
 
 # Errors
+
+If error in gcc compiler not working 
+```
+sudo apt install gobjc++
+sudo apt-get install --reinstall build-essential
+sudo apt-get install --reinstall gcc
+sudo dpkg-reconfigure build-essential
+sudo dpkg-reconfigure gcc
+sudo apt -y install gcc-12 g++-12
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 12
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 12
+sudo update-alternatives --config gcc
+sudo update-alternatives --config g++
+gcc --version; g++ --version
+```
