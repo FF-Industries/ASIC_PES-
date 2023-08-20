@@ -9,10 +9,12 @@ Mentor- Kunal Ghosh
 ### CODE:
 <img width="299" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/76d9aac4-9f31-4113-a5c1-81a02c17e81b">
 * **Commands to compile and run c code in normal compiler**
+
 ...
 gcc (filename).c
 ./a.out
 ...
+
 ### OUTPUT USING NORMAL COMPILER:
 <img width="312" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/4dd335eb-a195-4c16-99e2-19b6c67e1137">
 
