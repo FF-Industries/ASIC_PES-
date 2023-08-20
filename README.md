@@ -1,6 +1,6 @@
 # ASIC_PES-CLASS
 
-ASIC flow course
+ASIC PHYSICAL DESIGN
 Mentor- Kunal Ghosh
 
 ## DAY 1
