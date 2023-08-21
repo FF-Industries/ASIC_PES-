@@ -53,6 +53,9 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 ## DAY 2
 ### APPLICATION BINARY INTERFACE
 * An Application Binary Interface (ABI) is a set of rules and conventions that dictate how binary code interacts with and communicates with other binary code, typically at the level of machine code or compiled code.
+* It defines the interface between two software components or systems that are written in different programming languages, compiled by different compilers, or running on different hardware architectures.
+* When an application needs to use the harware resources of a system it is working on, it uses these resources with the help of system calls. These system calls are performed through an interface called the Application Binary Interface(ABI). It is also called the System Call Interface.
+
 
 
 
