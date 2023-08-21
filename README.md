@@ -109,7 +109,6 @@ load.s file -
 <img width="891" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9726e76e-1afc-42fc-8726-a7cde70a4f9b">
 
 ## DAY 3
-s
 
 
 
