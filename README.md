@@ -95,7 +95,7 @@ ABI names for registers serve as a standardized way to designate the purpose and
 
 ### SUM OF NIMBERS FROM 1 TO N USING ASM:
 
-#### CODE:
+#### CODE :
 1to9_custom.c file -
 
 <img width="517" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/473cb257-2648-4120-a00a-e5f7cdb41253">
@@ -104,6 +104,9 @@ load.s file -
 
 <img width="517" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b1f93a2b-2900-4a00-87c2-8e8f00e3ecbc">
 
+#### OUTPUT :
+
+<img width="891" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9726e76e-1afc-42fc-8726-a7cde70a4f9b">
 
 
 
