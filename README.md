@@ -51,7 +51,8 @@ riscv64-unknown-elf-objdump -d (filename).o | less
 <img width="423" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b6fb963c-022c-41bd-b4ed-159543bc91da">
 
 ## DAY 2
-
+### APPLICATION BINARY INTERFACE
+* An Application Binary Interface (ABI) is a set of rules and conventions that dictate how binary code interacts with and communicates with other binary code, typically at the level of machine code or compiled code.
 
 
 
