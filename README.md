@@ -93,7 +93,7 @@ ABI names for registers serve as a standardized way to designate the purpose and
 
 <img width="319" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/c3b662e5-220e-487b-948b-54fe32c6b610">
 
-### SUM OF NIMBERS FROM 1 TO N USING ASM:
+### SUM OF NUMBERS FROM 1 TO N USING ASM:
 
 #### CODE :
 1to9_custom.c file -
@@ -107,6 +107,26 @@ load.s file -
 #### OUTPUT :
 
 <img width="891" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9726e76e-1afc-42fc-8726-a7cde70a4f9b">
+
+### STEPS TO RUN C CODE ON RISC-V :
+
+`git clone https://github.com/kunalg123/riscv_workshop_collaterals.git`
+
+`cd riscv_workshop_collaterals`
+
+`ls -ltr`
+
+`cd labs`
+
+`ls -ltr`
+
+`chmod 777 rv32im.sh`
+
+`./rv32im.sh`
+
+#### OUTPUT :
+
+![image](https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/2f29b026-8c15-410e-a18a-433caeb0f11b)
 
 ## DAY 3
 
