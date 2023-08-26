@@ -134,6 +134,11 @@ load.s file -
 ![image](https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/2f29b026-8c15-410e-a18a-433caeb0f11b)
 
 ## DAY 3
+### INTRODUCTION TO YOSYS
+#### LABS USING YOSYS AND SKY130 PDK
+
+
+
 
 
 
