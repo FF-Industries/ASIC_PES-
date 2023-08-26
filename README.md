@@ -187,6 +187,7 @@ Below are the commands to perform above synthesis.
 <img width="288" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/bfec632e-17fc-4a6b-a972-2c1fb461d2a1">
 
 Formula -
+
 <img width="227" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fadead63-52ac-4a50-a693-b63a59d5a537">
 
 
