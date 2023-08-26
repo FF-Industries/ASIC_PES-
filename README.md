@@ -161,6 +161,41 @@ load.s file -
 
 <img width="922" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/893ee372-1633-4aaf-b009-d71bbb0c7fd2">
 
+#### Using YOSYS synthesizer :
+<img width="903" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/8ff77a55-1ce5-46a7-9341-2b45bb80eac7">
+
+**Yosys**: Yosys is a framework for RTL synthesis and more. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Yosys is the core component of most our implementation and verification flows.
+
+<img width="612" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6723dc3f-8bd2-4397-9ee4-9d82248af091">
+
+**Synthesizer**: It is a tool we use to convert out RTL design code to netlist.
+
+<img width="672" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b24b1242-1955-4fd1-8cdc-cd13928e31b7">
+
+Below are the commands to perform above synthesis.
+
+- RTL Design  - read_verilog
+- .lib        - read_liberty
+- netlist file- write_verilog
+
+<img width="638" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f2cad5a9-8471-4b29-a845-f4a839f49aae">
+
+- Clock to Q of flipflop A
+- Propagation delay of combinational circuit
+- Setuptime of flipflop B
+
+<img width="288" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/bfec632e-17fc-4a6b-a972-2c1fb461d2a1">
+
+Formula -
+<img width="227" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fadead63-52ac-4a50-a693-b63a59d5a537">
+
+
+
+
+
+
+
+
 
 
 
