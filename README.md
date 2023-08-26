@@ -134,7 +134,7 @@ load.s file -
 ![image](https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/2f29b026-8c15-410e-a18a-433caeb0f11b)
 
 ## DAY 3
-### LABS USING YOSYS AND SKY130 PDK
+### LABS USING YOSYS AND SKY130 PDK :
 
 **RTL Design**: In simple terms RTL design or Register Transfer Level design is a method in which we can transfer data from one register to another. In RTL design we write code for Combinational and Sequential circuits in HDL(Hardware Description Language) like Verilog or VerilogHDL which can model logical and hardware operation.
 
@@ -149,11 +149,18 @@ load.s file -
 <img width="887" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fd82d360-da4d-463f-9f79-12dafcff1c21">
 
 #### Lab examples using iverilog and gtkwav:
+**Commands to run the code**:
+
 <img width="906" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a5614629-b94e-47ac-83d2-3fd70a1dd57e">
 
-OUTPUT-
+**Output**:
 
 <img width="925" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/09e21d0b-7b66-4995-94b3-cb872956f289">
+
+**Code**:
+
+<img width="922" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/893ee372-1633-4aaf-b009-d71bbb0c7fd2">
+
 
 
 
