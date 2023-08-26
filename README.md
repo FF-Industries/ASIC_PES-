@@ -134,8 +134,26 @@ load.s file -
 ![image](https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/2f29b026-8c15-410e-a18a-433caeb0f11b)
 
 ## DAY 3
-### INTRODUCTION TO YOSYS
-#### LABS USING YOSYS AND SKY130 PDK
+### LABS USING YOSYS AND SKY130 PDK
+
+**RTL Design**: In simple terms RTL design or Register Transfer Level design is a method in which we can transfer data from one register to another. In RTL design we write code for Combinational and Sequential circuits in HDL(Hardware Description Language) like Verilog or VerilogHDL which can model logical and hardware operation.
+
+**Test Bench**: Using Verilog we can write a test bench to apply stimulus to the RTL design and verify the results of the design by instantiating design with in test bench. Up-front verification becomes very important as design size increases in size and complexity while any project progresses. This ensures simulation results matches with post synthesis results.
+
+**Simluator**: Simulator is the tool used for this process. It looks for changes on input signals to evaluate outputs. No change in output if there is no change in input signals.
+
+<img width="815" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6e1eca88-aaec-483c-b830-78f163da0fe6">
+
+**iverilog**: iverilog stands for Icarus Verilog. Icarus Verilog is an implementation of the Verilog hardware description language.
+
+<img width="887" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fd82d360-da4d-463f-9f79-12dafcff1c21">
+
+#### Lab examples using iverilog and gtkwav:
+<img width="906" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a5614629-b94e-47ac-83d2-3fd70a1dd57e">
+
+
+
+
 
 
 
