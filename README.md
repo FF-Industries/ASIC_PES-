@@ -7,6 +7,7 @@ Mentor- Kunal Ghosh
 - [DAY 1](https://github.com/FF-Industries/ASIC_PES-CLASS/blob/main/README.md#day-1)
 - [DAY 2](https://github.com/FF-Industries/ASIC_PES-CLASS/blob/main/README.md#day-2)
 - [DAY 3](https://github.com/FF-Industries/ASIC_PES-CLASS/blob/main/README.md#day-3)
+- [DAY 4](https://github.com/FF-Industries/ASIC_PES-CLASS/blob/main/README.md#day-3)
 
 ## DAY 1
 * Introduction to RISC-V ISA and GNU compiler toolchain , The C-program is converted into Assembly Code( here for RISC-V processor). Then the assembly code is converted into binary. An RTL implements this code for the particular layout of the RISC-V processor and the output is visible.
@@ -235,6 +236,8 @@ write_verilog good_mux_netlist.v
 For neater netlist:```write_verilog -noatrr good_mux_netlist.v```
 
 <img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/68ea1899-7195-482d-8e7a-aed2d40035fa">
+
+## DAY 4
 
 
 
