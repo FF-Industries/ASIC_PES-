@@ -151,6 +151,12 @@ load.s file -
 #### Lab examples using iverilog and gtkwav:
 <img width="906" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a5614629-b94e-47ac-83d2-3fd70a1dd57e">
 
+OUTPUT-
+
+<img width="925" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/09e21d0b-7b66-4995-94b3-cb872956f289">
+
+
+
 
 
 
