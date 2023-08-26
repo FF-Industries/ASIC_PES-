@@ -186,9 +186,57 @@ Below are the commands to perform above synthesis.
 
 <img width="288" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/bfec632e-17fc-4a6b-a972-2c1fb461d2a1">
 
-Formula -
+Formula :
 
 <img width="227" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fadead63-52ac-4a50-a693-b63a59d5a537">
+
+**YOSYS** :
+
+Command to read form which director in yosys :
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+<img width="425" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/79bab388-2076-4167-b39c-98462a37e576">
+
+Command to read the code :
+```
+read_verilog (filename).v
+```
+
+<img width="289" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/027240e4-5f22-474a-b3de-0707449a4e7d">
+
+Command to run the code :
+```
+synth -top (filename)
+```
+
+<img width="297" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b47660e4-6285-4e9b-b418-f0b4c16b3ade">
+
+Command to generate the netlist :
+```
+abc -liberty ../my_lib//lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+<img width="267" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6d82898e-47c3-4997-9b06-b6b000e55e86">
+
+Command to show synthesized design :
+```
+show
+```
+<img width="299" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/546fbd53-5137-479e-9c2e-271da9a57168">
+
+Command to check netlist file :
+```
+write_verilog good_mux_netlist.v
+!gedit good_mux_netlist.v
+```
+<img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/d5e14b5d-079d-47f8-a643-313d71292056">
+
+
+
+
+
+
 
 
 
