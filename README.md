@@ -232,6 +232,10 @@ write_verilog good_mux_netlist.v
 ```
 <img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/d5e14b5d-079d-47f8-a643-313d71292056">
 
+For neater netlist:```write_verilog -noatrr good_mux_netlist.v```
+
+<img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/68ea1899-7195-482d-8e7a-aed2d40035fa">
+
 
 
 
