@@ -238,6 +238,38 @@ For neater netlist:```write_verilog -noatrr good_mux_netlist.v```
 <img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/68ea1899-7195-482d-8e7a-aed2d40035fa">
 
 ## DAY 4
+### INTRODUCTION TO TIMING DOT LIBS :
+We use command ```gedit ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib``` to view the content in the file.
+
+<img width="927" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/52f26036-c21f-410e-8b86-1b8460b5b41a">
+
+
+*Sky130 is a 130nm library , here 130nm refers to the channel lenght of the mosfet.
+*"tt" refers to typical ,they can be faast or slow libraries.
+*025c is the temperature.
+*1v9 refers to the voltage.
+*PVT is PROCESS VOLTAGE TEMPERATURE.
+*Some more parameters :
+
+<img width="259" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fdd4a5d8-f526-4fdd-879d-698fc27afc33">
+
+<img width="619" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/96e8e332-c009-47f5-90fd-a23109a7d7d4">
+
+Leakage power consumption is the power consumed by the sub threshold currents and by reverse biased diodes in a CMOS transistor.
+
+*** HIERARCHIAL VS FLAT SYNTHESIS:
+Hierarchical Synthesis Hierarchical synthesis is an approach in digital design and logic synthesis where complex designs are broken down into smaller, more manageable modules or sub-circuits, and each module is synthesized individually. These synthesized modules are then integrated back into the overall design hierarchy. It is like modularization in c which makes it much simpler to understand the code.
+
+
+  
+
+
+
+
+
+
+
+
 
 
 
