@@ -259,6 +259,37 @@ Leakage power consumption is the power consumed by the sub threshold currents an
 ### HIERARCHIAL VS FLAT SYNTHESIS:
 Hierarchical Synthesis Hierarchical synthesis is an approach in digital design and logic synthesis where complex designs are broken down into smaller, more manageable modules or sub-circuits, and each module is synthesized individually. These synthesized modules are then integrated back into the overall design hierarchy. It is like modularization in c which makes it much simpler to understand the code.
 
+* We us a file called multiple-modules.v.
+* There are two modules one for and gate and other for or gate and they are instantiated in the same file.
+<img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f55a137a-a7f4-486f-a10a-b3545ba5d73b">
+
+* Launch yosys
+* Command to read library file : ```read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
+
+<img width="437" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e2ffa9c4-967f-4217-86b4-f802174de9f5">
+
+* Command to read verilog file : ``` read_verilog multiple_modules.v ```
+
+<img width="339" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/c1d48fce-ac74-41e0-9067-16f42620eb9d">
+
+* Command to set it as top module : ```synth -top multiple_modules```
+
+<img width="266" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f80e920a-e145-497a-aae2-e2dc482da6b6">
+<img width="176" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/efbe647a-6757-41a8-8b78-77a827ff42a6">
+
+* Command to show netlist ```abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib``` and ```show multiple_modules ```
+
+<img width="302" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6cddbbac-4fe7-4ac0-bc93-17167734100b">
+ 
+ 
+
+
+
+
+
+
+
+
 
 
 
