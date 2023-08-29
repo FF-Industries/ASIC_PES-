@@ -273,13 +273,38 @@ Hierarchical Synthesis Hierarchical synthesis is an approach in digital design a
 <img width="339" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/c1d48fce-ac74-41e0-9067-16f42620eb9d">
 
 * Command to set it as top module : ```synth -top multiple_modules```
-
-<img width="266" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f80e920a-e145-497a-aae2-e2dc482da6b6">
 <img width="176" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/efbe647a-6757-41a8-8b78-77a827ff42a6">
 
 * Command to show netlist ```abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib``` and ```show multiple_modules ```
 
 <img width="302" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6cddbbac-4fe7-4ac0-bc93-17167734100b">
+
+* As we can see there are two modules here replacing the and gate and the or gate.
+* Do ```write_verilog -noattr multiple_modules_hier.v``` then ```!gedit multiple_modules_hier.v```
+
+<img width="427" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a4da5d60-427b-4931-a617-2fbc8ede8525">
+
+<img width="427" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0aaf8d87-c88d-4d62-ba14-62fc351d1b2c">
+
+<img width="427" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0764b55c-d4f7-4328-a4a5-0daf1f75405b">
+
+Flattened Synthesis Flattened synthesis is the opposite of hierarchical synthesis. Instead of maintaining the hierarchical structure of the design during synthesis, flattened synthesis combines all modules and sub-modules into a single, flat representation.
+
+* Following the same steps till abc command then we do command ```flatten```and then ```show```.
+
+<img width="638" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/cd25b63a-4465-4ec6-81e2-08b1b07f2df1">
+
+
+
+
+
+
+
+
+
+
+
+
  
  
 
