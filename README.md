@@ -260,6 +260,9 @@ Leakage power consumption is the power consumed by the sub threshold currents an
 Hierarchical Synthesis Hierarchical synthesis is an approach in digital design and logic synthesis where complex designs are broken down into smaller, more manageable modules or sub-circuits, and each module is synthesized individually. These synthesized modules are then integrated back into the overall design hierarchy. It is like modularization in c which makes it much simpler to understand the code.
 
 
+
+
+
   
 
 
