@@ -256,8 +256,7 @@ We use command ```gedit ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib``` to vi
 <img width="619" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/96e8e332-c009-47f5-90fd-a23109a7d7d4">
 
 Leakage power consumption is the power consumed by the sub threshold currents and by reverse biased diodes in a CMOS transistor.
-
-*** HIERARCHIAL VS FLAT SYNTHESIS:
+### HIERARCHIAL VS FLAT SYNTHESIS:
 Hierarchical Synthesis Hierarchical synthesis is an approach in digital design and logic synthesis where complex designs are broken down into smaller, more manageable modules or sub-circuits, and each module is synthesized individually. These synthesized modules are then integrated back into the overall design hierarchy. It is like modularization in c which makes it much simpler to understand the code.
 
 
