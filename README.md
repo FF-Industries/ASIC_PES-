@@ -310,12 +310,28 @@ Flattened Synthesis Flattened synthesis is the opposite of hierarchical synthesi
 <img width="438" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/bb990bfa-16f6-490e-a0b2-f8e01703c686">
 
 **Simulation -**
-* cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
-* iverilog dff_asyncres.v tb_dff_asyncres.v
-* ./a.out
-* gtkwave tb_dff_asyncres.vcd
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+iverilog dff_asyncres.v tb_dff_asyncres.v
+./a.out
+gtkwave tb_dff_asyncres.vcd
+```
 
 <img width="866" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/ec770041-230d-453b-aa7e-ab5fa519a6f2">
+
+**Synthesis -**
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+yosys
+read_liberty -lib ../my-lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_asyncres.v
+synth -top dff_asyncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="709" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b28aa074-e13e-4b00-8131-18b9d442d6c5">
 
 #### D Flip_Flop with Asynchronous Set
 * When the set is high, the output of the flip-flop is forced to 1, irrespective of the clock signal.
@@ -323,11 +339,59 @@ Flattened Synthesis Flattened synthesis is the opposite of hierarchical synthesi
 
 <img width="410" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b2d7fe69-eb59-4fa2-9b43-3deadc621494">
 
+**Simulation -**
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+iverilog dff_async_set.v tb_dff_async_set.v
+./a.out
+gtkwave tb_dff_async_set.vcd
+```
+
+<img width="867" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/245ace6b-c213-4068-b665-28bb4e7bd6ed">
+
+**Synthesis -**
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+yosys
+read_liberty -lib ../my-lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_async_set.v
+synth -top dff_async_set
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="765" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e72457f1-3582-4509-8039-a9921c0f88c2">
+
 #### D Flip-Flop with Synchronous Reset
 * When the reset is high on the positive edge of the clock, the output of the flip-flop is forced to 0.
 * File is ```!gedit dff_syncres.v```
 
 <img width="439" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0a0bfd0e-88b9-46ee-9371-c2f9cfd205bb">
+
+**Simulation -**
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+iverilog dff_syncres.v tb_dff_syncres.v
+./a.out
+gtkwave tb_dff_syncres.vcd
+```
+
+<img width="867" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/807081ea-e867-42b4-8623-4bd4045b24fc">
+
+**Synthesis -**
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+yosys
+read_liberty -lib ../my-lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_syncres.v
+synth -top dff_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="633" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/bcd0d933-be27-4d09-8498-75137aed7dae">
 
 #### D Flip-Flop with Asynchronous Reset and Synchronous Reset
 * When the asynchronous resest is high, the output is forced to 0.
