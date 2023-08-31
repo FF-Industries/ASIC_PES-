@@ -256,7 +256,7 @@ We use command ```gedit ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib``` to vi
 <img width="619" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/96e8e332-c009-47f5-90fd-a23109a7d7d4">
 
 Leakage power consumption is the power consumed by the sub threshold currents and by reverse biased diodes in a CMOS transistor.
-### HIERARCHIAL VS FLAT SYNTHESIS:
+### HIERARCHIAL VS FLAT SYNTHESIS :
 Hierarchical Synthesis Hierarchical synthesis is an approach in digital design and logic synthesis where complex designs are broken down into smaller, more manageable modules or sub-circuits, and each module is synthesized individually. These synthesized modules are then integrated back into the overall design hierarchy. It is like modularization in c which makes it much simpler to understand the code.
 
 * We us a file called multiple-modules.v.
@@ -293,6 +293,58 @@ Flattened Synthesis Flattened synthesis is the opposite of hierarchical synthesi
 * Following the same steps till abc command then we do command ```flatten```and then ```show```.
 
 <img width="638" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/cd25b63a-4465-4ec6-81e2-08b1b07f2df1">
+
+* Then do ```write_verilog -noattr multiple_modules_flat.v``` then ```!gedit multiple_modules_flat.v```
+
+<img width="854" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0b89095a-1333-4a96-953f-6a1405d6e551">
+
+### Various Flop Coding Styles and Optimization :
+* Flops are fundamental parts of digital circuits that help in preventing glitches and thereby endure smooth operation of the circuit.
+* During the propagation of data, if there are different paths with different propagation delays, then a glitch might occur.
+* Flops help prevent glitches by providing a control and synchronization for holding and propagating changes in signals in the circuit.
+
+#### D Flip-Flop with Asynchronous Reset
+* When the reset is high, the output of the flip-flop is forced to 0, irrespective of the clock signal.
+* File is ```!gedit dff_asyncres_syncres.v```.
+
+<img width="438" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/bb990bfa-16f6-490e-a0b2-f8e01703c686">
+
+**Simulation -**
+* cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+* iverilog dff_asyncres.v tb_dff_asyncres.v
+* ./a.out
+* gtkwave tb_dff_asyncres.vcd
+
+<img width="866" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/ec770041-230d-453b-aa7e-ab5fa519a6f2">
+
+#### D Flip_Flop with Asynchronous Set
+* When the set is high, the output of the flip-flop is forced to 1, irrespective of the clock signal.
+* File is ```!gedit dff_async_set.v```
+
+<img width="410" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b2d7fe69-eb59-4fa2-9b43-3deadc621494">
+
+#### D Flip-Flop with Synchronous Reset
+* When the reset is high on the positive edge of the clock, the output of the flip-flop is forced to 0.
+* File is ```!gedit dff_syncres.v```
+
+<img width="439" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0a0bfd0e-88b9-46ee-9371-c2f9cfd205bb">
+
+#### D Flip-Flop with Asynchronous Reset and Synchronous Reset
+* When the asynchronous resest is high, the output is forced to 0.
+* When the synchronous reset is high at the positive edge of the clock, the output is forced to 0.
+* File is ```!gedit dff_asyncres_syncres.v```
+
+<img width="425" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9f6475e2-eb40-46d1-b539-dd11c54fdbf2">
+
+
+
+
+
+
+
+
+
+
 
 
 
