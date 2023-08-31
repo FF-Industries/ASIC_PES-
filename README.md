@@ -400,6 +400,54 @@ show
 
 <img width="425" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9f6475e2-eb40-46d1-b539-dd11c54fdbf2">
 
+#### Intresting Optimizations
+
+* `!gedit mult_2.v`
+
+<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6046fb40-a73b-430e-9b6e-38e055d6b740">
+
+* `read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+* `read_verilog mult_2.v`
+* `synth -top mul2`
+
+<img width="215" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/34780051-bdbb-4524-bc02-cc6624bcbdf6">
+
+* `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+* `show`
+
+<img width="301" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/00e56d5c-9206-40e9-80c7-099b968bfbb4">
+
+* `write_verilog -noattr mul2_netlist.v`
+* `!gedit mul2_netlist.v`
+  
+<img width="326" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/64eacad1-3e64-4661-b61b-f8617c1890fe">
+
+
+* `!gedit mult_8.v`
+
+<img width="331" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/af3275a6-943d-4e80-ab33-bd4748c9c268">
+
+* `read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  `
+* `read_verilog mult_8.v`
+* `synth -top mult8`
+  
+<img width="291" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9aff0c90-8a5a-485c-b34a-aad6724a2087">
+
+* `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+* `show`
+
+<img width="296" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b96de6dc-7085-49c5-b4cb-8afd921a2e64">
+
+* `write_verilog -noattr mult8_netlist.v`
+* `!gedit mult8_netlist.v`
+
+<img width="296" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/8eccfea0-2ead-4d9f-a83c-1b3796a11a32">
+
+## DAY 5
+
+
+
+
 
 
 
