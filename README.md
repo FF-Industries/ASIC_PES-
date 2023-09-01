@@ -538,20 +538,189 @@ show
 #### Sequential Logic Optimisations
 * Sequential logic optimizations involve improving the efficiency, performance, and resource utilization of digital circuits that include memory elements like flip-flops and latches.
 
+**dff_const1**
 
+Simulation -
 
+```
+gedit dff_const1.v
+iverilog dff_const1.v tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const1.vcd
+```
 
+![image](https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/259679e2-cd71-428b-8c61-f7097353d713)
 
+<img width="634" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/8f320155-0562-4838-9c82-1f6cb44c372e">
 
+Synthesis -
 
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const1.v
+synth -top dff_const1
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
 
+<img width="182" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/64db811d-3ef8-46f2-bbed-cb4a78069866">
 
+<img width="302" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/09a7e39b-98fa-4c07-85a7-6a0ddb3ee812">
 
+**dff_const2**
 
+Simulation -
 
+```
+gedit dff_const2.v
+iverilog dff_const2.v tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const2.vcd
+```
 
+<img width="446" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/47321c6f-59c3-430e-8db0-30936570ca48">
 
+<img width="649" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a4dbb0ea-a7cc-494d-a66b-a1cf924b7e30">
 
+Synthesis -
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const2.v
+synth -top dff_const2
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="192" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/2ec0bc79-277c-4659-ae17-d42f8bc9a4f1">
+
+<img width="298" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fcf87f94-858c-4cda-b8d1-1d31189957d2">
+
+**dff_const3**
+
+Simulation -
+
+```
+gedit dff_const3.v
+iverilog dff_const3.v tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const3.vcd
+```
+
+<img width="447" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e6ccc9f3-b9a9-4ef9-9558-02f25dba9afe">
+
+<img width="672" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0d4f3789-e7bf-4514-ac9c-8e5bef38e143">
+
+Synthesis -
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const3.v
+synth -top dff_const3
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="199" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0c0763e0-6546-4bfa-831a-71c631cf1048">
+
+<img width="513" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b881c14a-d309-488d-a001-9afa49a6b5b8">
+
+**dff_const4**
+
+Simulation -
+
+```
+gedit dff_const4.v
+iverilog dff_const4.v tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const4.vcd
+```
+
+<img width="446" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e6bd4630-fc17-43a8-8b56-965cca2c719e">
+
+<img width="677" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/12ed5633-38e7-49d1-bbfc-3c4117eb7581">
+
+Synthesis -
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const4.v
+synth -top dff_const4
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="192" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/df88a549-db3f-4fb6-a6ef-619872e7e8c3">
+
+<img width="295" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/216c8cce-9726-4732-b99a-d45061caaec1">
+
+**dff_const5**
+
+Simulation -
+
+```
+gedit dff_const5.v
+iverilog dff_const5.v tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const5.vcd
+```
+
+<img width="449" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/eb7ec738-f0ba-446e-8fd7-e6f72530df43">
+
+<img width="676" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/fd0b7243-4b4a-49a4-a90d-82912b604d07">
+
+Synthesis -
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const5.v
+synth -top dff_const5
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="184" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/022efb47-9679-4994-8aa7-50038a9406ea">
+
+<img width="505" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/6c197941-a80c-4f31-a953-79823f69eb60">
+
+**counter_opt**
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="445" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/90acebe7-0710-424e-852a-c2b8fcbc5ba2">
+
+<img width="184" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/15ba6a49-cdb9-49fd-943b-96dd54cd80cd">
+
+<img width="587" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/cd85b701-5615-4aa8-9719-286c19aaf79e">
+
+**counter_opt2**
+
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt2.v
+synth -top counter_opt2
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="444" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/76014a68-b5cb-4e2c-9420-c544283c7645">
+
+<img width="133" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/60b26e37-a1fb-4c62-a1f4-632cc32623e4">
+
+<img width="683" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/c13fd42e-3146-4d2d-accf-7b447a9c22c5">
 
 
 
