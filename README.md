@@ -724,10 +724,59 @@ show
 <img width="683" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/c13fd42e-3146-4d2d-accf-7b447a9c22c5">
 
 ## DAY 6
+### GLS Synthesis-Simulation Mismatch and Blocking Non-blocking Statements
+#### Gate Level Simualtion
+* Gate-level simulation is a technique used in digital design and verification to validate the functionality of a digital circuit at the gate-level implementation.
+* It involves simulating the circuit using the actual logic gates and flip-flops that make up the design, as opposed to higher-level abstractions like RTL (Register Transfer Level) descriptions.
+#### Synthesis-Simulation Mismatch
+* A synthesis-simulation mismatch refers to a situation in digital design where the behavior of a circuit, as observed during simulation, doesn't match the expected or desired behavior of the circuit after it has been synthesized.
+* This discrepancy can occur due to various reasons, such as timing issues, optimization conflicts, and differences in modeling between the simulation and synthesis tools.
+#### Blocking Statements
+* Blocking statements are executed sequentially in the order they appear in the code and have an immediate effect on signal assignments
+* Example :```X=1;```.
+#### Non-Blocking Statements
+* Non-blocking assignments are used to model concurrent signal updates, where all assignments are evaluated simultaneously and then scheduled to be updated at the end of the time step.
+* Example :``` X<=1;```.
+#### Caveats with Blocking Statements
+* Blocking statements in hardware description languages like Verilog have their uses, but there are certain caveats and considerations to be aware of when working with them.
+* Procedural Execution: Blocking statements are executed sequentially in the order they appear within a procedural block (such as an always block). This can lead to unexpected behavior if the order of execution matters and is not well understood.
+* Lack of Parallelism: Blocking statements do not accurately represent the parallel nature of hardware. In hardware, multiple signals can update concurrently, but blocking statements model sequential behavior. As a result, using blocking statements for modeling complex concurrent logic can lead to incorrect simulations.
+* Race Conditions: When multiple blocking assignments operate on the same signal within the same procedural block, a race condition can occur. The outcome of such assignments depends on their order of execution, which might lead to inconsistent or unpredictable behavior.
+* Not Suitable for Flip-Flops: Blocking assignments are not suitable for modeling flip-flop behavior. Non-blocking assignments (<=) are generally preferred for modeling flip-flop updates to ensure accurate representation of concurrent behavior.
+* Combinatorial Loops: Incorrect use of blocking statements can lead to unintentional combinational logic loops, which can result in simulation or synthesis errors.
+* Synthesis Implications: The behavior of blocking assignments might not translate well during synthesis, leading to potential mismatches between simulation and synthesis results.
+### Labs on GLS and Synthesis-Simulation Mismatch
+#### ternary_operator_mux
+Simulation -
+```
+gedit ternary_operator_mux
+iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vc
+```
 
+<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0f3bf283-0df5-42a7-9b9d-775f70046224">
 
+<img width="759" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b11e4af8-e3f9-4f33-8d75-079603c25cdc">
 
+Synthesis -
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog ternary_operator_mux.v
+synth -top ternary_operator_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+<img width="181" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b2c810e5-dc18-4c63-b2e9-d3b949be7b30">
 
+<img width="301" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/2465bf90-c89d-4b6e-8965-fd7884c1d121">
+
+GLS to Gate-level Simulation -
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+```
 
 
 
