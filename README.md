@@ -448,13 +448,10 @@ show
 ### INTRODUCTION TO OPTIMISATIONS :
 #### Combinational Logic Optimisations
 * Combinational logic refers to logic circuits where the outputs depend only on the current inputs and not on any previous states.Optimising the combinational logic circuit is squeezing the logic to get the most optimized digital design so that the circuit finally is area and power efficient.
-* Techniques for Optimisations:
-  - **Constant propagation** is an optimization technique used in compiler design and digital circuit synthesis to improve the efficiency of code and circuit implementations by replacing variables or expressions with their constant values where applicable.
-  - **Boolean logic optimization**, also known as logic minimization or Boolean function simplification, is a process in digital design that aims to simplify Boolean expressions or logic circuits by reducing the number of terms, literals, and gates required to implement a given logical function.
  
 **opt_check -**
 ```
-gvim opt_check.v
+!gedit opt_check.v
 read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog opt_check.v
 synth -top opt_check
@@ -463,23 +460,87 @@ abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
+<img width="450" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/65aab33a-3dd8-4bc6-9edf-b43aff9a1008">
+
+<img width="193" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/26079818-2639-41fd-bd1e-e6dd0a55d6ba">
+
+<img width="302" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/c632da06-0056-48ed-a3cd-f82877e8ef3a">
+
+**opt_check2 -**
+```
+!gedit opt_check2.v
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check2.v
+synth -top opt_check2
+opt_clean -purge
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="450" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/dcf95eb0-9914-4c87-a68a-0372e9792014">
+
+<img width="199" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/e03e8cf5-4dc3-4af7-a53d-64275e64232d">
+
+<img width="302" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/19c6c5e3-2ad8-4e55-8a31-9675b8efe548">
+
+**opt_check3 -**
+```
+!gedit opt_check3.v
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check3.v
+synth -top opt_check3
+opt_clean -purge
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/01dfd5a8-0e3e-4d38-af8f-503ffff3d910">
+
+<img width="185" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/3bd08fda-2247-41b2-88d6-f0c0eb7c4f25">
+
+<img width="302" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/200ec214-8e2a-44ef-b7f8-9b9fb217b67d">
+
+**opt_check4 -**
+```
+!gedit opt_check4.v
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check4.v
+synth -top opt_check4
+opt_clean -purge
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="446" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/eb6eda1d-c2ed-47da-aff8-24b43954bde0">
+
+<img width="187" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a827ddff-9be2-473d-9d43-de933b3218a2">
+
+<img width="296" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/a28113aa-987b-4ff6-b627-b136252cc981">
 
 
+**multiple_module_opt -**
+```
+!gedit multiple_module_opt.v
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_module-opt.v
+synth -top multiple_module_opt
+opt_clean -purge
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/3e4a9286-e58f-4340-bbc3-73d255798d3c">
 
+<img width="183" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/aec71efc-b65c-4897-b076-ff3bb541e336">
 
-
-
-
+<img width="301" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/78072dd0-896e-43d4-bf39-23fea00f1f09">
 
 
 #### Sequential Logic Optimisations
 * Sequential logic optimizations involve improving the efficiency, performance, and resource utilization of digital circuits that include memory elements like flip-flops and latches.
-* Optimisation methods:
-  - **Sequential constant propagation**, also known as constant propagation across sequential elements, is an optimization technique used in digital design to identify and propagate constant values through sequential logic elements like flip-flops and registers. This technique aims to replace variable values with their known constant values at various stages of the logic circuit, optimizing the design for better performance and resource utilization.
-  - **State optimization**, also known as state minimization or state reduction, is an optimization technique used in digital design to reduce the number of states in finite state machines (FSMs) while preserving the original functionality.
-  - **Sequential logic cloning**, also known as retiming-based cloning or register cloning, is a technique used in digital design to improve the performance of a circuit by duplicating or cloning existing registers (flip-flops) and introducing additional pipeline stages. This technique aims to balance the critical paths within a circuit and reduce its overall clock period, leading to improved timing performance and better overall efficiency.
-  - **Retiming** is an optimization technique used in digital design to improve the performance of a circuit by repositioning registers (flip-flops) along its paths to balance the timing and reduce the critical path delay. The primary goal of retiming is to achieve a shorter clock period without changing the functionality of the circuit.
- 
+
+
+
+
 
 
 
