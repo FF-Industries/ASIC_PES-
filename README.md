@@ -749,10 +749,10 @@ show
 #### ternary_operator_mux
 Simulation -
 ```
-gedit ternary_operator_mux
+gedit ternary_operator_mux.v
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
 ./a.out
-gtkwave tb_ternary_operator_mux.vc
+gtkwave tb_ternary_operator_mux.vcd
 ```
 
 <img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/0f3bf283-0df5-42a7-9b9d-775f70046224">
@@ -775,8 +775,81 @@ GLS to Gate-level Simulation -
 ```
 iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
 ./a.out
-gtkwave tb_bad_mux.vcd
+gtkwave tb_ternary_operator_mux.vcd
 ```
+<img width="603" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/72347366-324a-47d9-a207-3f4fd5157fce">
+
+#### bad_mux
+Simulation -
+```
+gedit bad_mux.v
+iverilog bad_mux.v tb_bad_mux.v
+./a.out
+gtkwave bad_mux.vcd
+```
+
+<img width="445" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/98c7f99e-870f-47be-9abf-08515938f7a3">
+
+<img width="594" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/243cca55-a943-4572-b9e2-e62d378c6085">
+
+Synthesis -
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog bad_mux.v
+synth -top bad_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="189" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/f3578161-d17d-4be2-9cba-bd21e0010da9">
+
+<img width="300" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/92bedaaa-45aa-431e-8b85-7530e03e3e05">
+
+GLS to Gate-level Simulation -
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_mux_net.v tb_bad_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+```
+
+<img width="653" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/5d42cacb-5ffc-4bbf-8a75-3f8ce8ee2593">
+
+### Labs on Synth-Sim Mismatch for Blocking Statement
+#### blocking_caveat
+Simulation -
+```
+gedit blocking_caveat.v
+iverilog blocking_caveat.v tb_blocking_caveat.v
+./a.out
+gtkwave blocking_caveat.vcd
+```
+
+<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/b3f6e07e-1211-484b-9bfe-51b8f5ec9d53">
+
+<img width="645" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/5286d66e-a673-4509-aa7b-4d9238c7a1b1">
+
+Synthesis -
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog blocking_caveat.v
+synth -top blocking_caveat
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+<img width="177" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/51c79349-1bbb-4002-8d83-a9b1e3cccefe">
+
+<img width="297" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/9cdf76f5-81d0-4229-a489-67b93b825b3c">
+
+GLS to Gate-level Simulation -
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
+
+<img width="712" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/539d51c0-82e2-4570-a064-e617c3cbb14b">
+
 
 
 
