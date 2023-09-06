@@ -529,11 +529,11 @@ opt_clean -purge
 abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
-<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/3e4a9286-e58f-4340-bbc3-73d255798d3c">
+<img width="448" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/3e4a9286-e58f-4340-bbc3-73d255798d3c">&nbsp;
 
-<img width="183" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/aec71efc-b65c-4897-b076-ff3bb541e336">
+<img width="183" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/aec71efc-b65c-4897-b076-ff3bb541e336">&nbsp;
 
-<img width="301" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/78072dd0-896e-43d4-bf39-23fea00f1f09">
+<img width="301" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/78072dd0-896e-43d4-bf39-23fea00f1f09">&nbsp;
 
 
 #### Sequential Logic Optimisations
@@ -655,9 +655,9 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-<img width="192" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/df88a549-db3f-4fb6-a6ef-619872e7e8c3">
+<img width="192" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/df88a549-db3f-4fb6-a6ef-619872e7e8c3">&nbsp;
 
-<img width="295" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/216c8cce-9726-4732-b99a-d45061caaec1">
+<img width="295" alt="image" src="https://github.com/FF-Industries/ASIC_PES-CLASS/assets/136846161/216c8cce-9726-4732-b99a-d45061caaec1">&nbsp;
 
 **dff_const5**
 
